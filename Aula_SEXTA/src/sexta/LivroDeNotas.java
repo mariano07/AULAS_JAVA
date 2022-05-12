@@ -4,10 +4,20 @@ import javax.swing.JOptionPane;
 
 public class LivroDeNotas {
 	String nomealuno,status;
-	int n1,n2,n3,matricula;
-	double media;
+	private int n1,n2,n3,matricula;
+	private double media;
+	private String obs="";
 	
-	public void Add_Aluno(){
+	
+	public String getObs() {
+		return obs;
+	}
+	
+	public void setObs(String obs) {
+		this.obs = obs;
+	}
+		
+	private void Add_Aluno(){
 		nomealuno = JOptionPane.showInputDialog("Informe um nome de aluno\n");
 		n1 = Integer.parseInt(JOptionPane.showInputDialog("Informe a primeira nota do aluno\n"));
 		n2 = Integer.parseInt(JOptionPane.showInputDialog("Informe a segunda nota do aluno\n"));
@@ -27,6 +37,7 @@ public class LivroDeNotas {
 			status = "Aluno Reprovado";
 		}
 	}	
+	
 	
 	public void Status() {
 		

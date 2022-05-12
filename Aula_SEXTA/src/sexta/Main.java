@@ -1,5 +1,7 @@
 package sexta;
 
+import javax.swing.JOptionPane;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -8,13 +10,11 @@ public class Main {
 		
 		escola.Add_Aluno();
 		escola.Media();
-		escola.Status();
-		
-		escola1.Add_Aluno();
-		escola1.Media();
-		escola1.Status();
-		
-		
+		/*
+		escola.setObs(JOptionPane.showInputDialog("Inform seu Nome:\n"));
+		JOptionPane.showMessageDialog(null, escola.getObs());
+			*/
+	
 	}
 
 }
